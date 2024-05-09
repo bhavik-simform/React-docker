@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+    depends_on:
+      - web
+    ports:
+      - 80:80

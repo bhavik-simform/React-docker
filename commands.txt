@@ -1,0 +1,21 @@
+docker ps - to see running docker containers
+docker images - to list the images
+docker login  -u <username> - for docker hub login (after this provide the token)
+
+
+docker build -t <imageName> -f <dockerfileName> . - to build docker image
+docker push <imageName> - to push to the docker hub
+
+## refer this for more info about the docker hub push
+https://www.cloudbees.com/blog/using-docker-push-to-publish-images-to-dockerhub
+
+
+##docker playground
+https://labs.play-with-docker.com/
+
+
+##deployment on docker stack
+docker stack deploy -c docker-compose.yml <stackName>
+
+##docker command cheatsheet
+https://dockerlabs.collabnix.com/docker/cheatsheet/
